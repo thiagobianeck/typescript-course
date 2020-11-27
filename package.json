@@ -2,8 +2,9 @@
   "name": "typescript-course",
   "version": "1.0.0",
   "description": "API Desenvolvida Utilizando TS, NODE, ES6, Postgres e Sequelize",
-  "main": "server.ts",
+  "main": "server/server.ts",
   "scripts": {
+    "start": "./node_modules/.bin/ts-node ./server/server.ts",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [
@@ -12,5 +13,15 @@
     "Node"
   ],
   "author": "Thiago Bianeck",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.17.1",
+    "express": "^4.15.2",
+    "http": "0.0.0",
+    "morgan": "^1.8.1",
+    "pg": "^6.1.5"
+  },
+  "devDependencies": {
+    "ts-node": "^3.0.2"
+  }
 }
